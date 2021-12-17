@@ -69,6 +69,15 @@ namespace RegexPatternMatching
         {
             return Regex.IsMatch(prule3, PASSWORD_RULE3_REGEX);
         }
+
+
+        //Method For Paasword Rule-4
+
+        public static string PASSWORD_RULE4_REGEX = "^([a-zA-Z0-9])*[!@#$%^&*]{1}([a-zA-Z0-9])*$"; // Has Exactly 1 Special Characters And All Rules Must Be Passed
+        public bool PasswordRule4(string prule4)
+        {
+            return Regex.IsMatch(prule4, PASSWORD_RULE4_REGEX);
+        }
     }
 }
 
