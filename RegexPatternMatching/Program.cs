@@ -9,7 +9,8 @@ namespace RegexPatternMatching
             //Console.WriteLine("Enter a Last Name");
             //Console.WriteLine("Enter Email Address: ");
             //Console.WriteLine("Enter Mobile Number: ");
-            Console.WriteLine("Enter Password Rule-1: ");
+            //Console.WriteLine("Enter Password Rule-1: ");
+            Console.WriteLine("Enter Password Rule-2: ");
             string instr = Console.ReadLine();
             Pattern program = new Pattern();
             //Console.WriteLine(program.validateFirstName(instr));

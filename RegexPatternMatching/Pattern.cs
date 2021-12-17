@@ -51,6 +51,15 @@ namespace RegexPatternMatching
         {
             return Regex.IsMatch(prule1, PASSWORD_RULE1_REGEX);
         }
+
+
+        //Method For Paasword Rule-2
+
+        public static string PASSWORD_RULE2_REGEX = "^([a-zA-Z0-9])*[!@#$%^&*]{1}([a-zA-Z0-9])*$"; // At least 1 Upper Case And All Rules Must Be Passed
+        public bool PasswordRule2(string prule2) 
+        {
+            return Regex.IsMatch(prule2, PASSWORD_RULE2_REGEX);
+        }
     }
 }
 
