@@ -34,6 +34,15 @@ namespace RegexPatternMatching
         {
             return Regex.IsMatch(email, EMAIL_REGEX);
         }
+
+
+        public static string MOBILE_NUMBER_REGEX = "^[1-9]{2}[6-9]{1}[0-9]{9}$"; //Mobile Number With Country Code
+
+        //Method For Validate Mobile Number With Country Code
+        public bool validateMobileNumber(string mnumber)
+        {
+            return Regex.IsMatch(mnumber, MOBILE_NUMBER_REGEX);
+        }
     }
 }
 
