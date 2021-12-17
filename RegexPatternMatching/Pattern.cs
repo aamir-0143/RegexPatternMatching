@@ -36,12 +36,20 @@ namespace RegexPatternMatching
         }
 
 
-        public static string MOBILE_NUMBER_REGEX = "^[1-9]{2}[6-9]{1}[0-9]{9}$"; //Mobile Number With Country Code
+        public static string MOBILE_NUMBER_REGEX = "^[0-9]{2}[6-9]{1}[0-9]{9}$"; //Mobile Number With Country Code
 
         //Method For Validate Mobile Number With Country Code
         public bool validateMobileNumber(string mnumber)
         {
             return Regex.IsMatch(mnumber, MOBILE_NUMBER_REGEX);
+        }
+
+        //Method For Paasword Rule-1
+
+        public static string PASSWORD_RULE1_REGEX = "^([a-zA-Z0-9])*[!@#$%^&*]{1}([a-zA-Z0-9])*$"; // Minimum 8 characters And All Rules Must Be Passed
+        public bool PasswordRule1(string prule1) 
+        {
+            return Regex.IsMatch(prule1, PASSWORD_RULE1_REGEX);
         }
     }
 }
