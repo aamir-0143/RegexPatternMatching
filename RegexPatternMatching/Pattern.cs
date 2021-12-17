@@ -25,6 +25,15 @@ namespace RegexPatternMatching
         {
             return Regex.IsMatch(lname, LAST_NAME_REGEX);
         }
+
+
+        public static string EMAIL_REGEX = "^[a-zA-Z0-9.]+@[a-zA-Z0-9]+.[a-zA-Z0-9]+.[a-zA-Z]{2,4}$"; //eg:-abc.xyz@bl.co.in
+
+        //Method For Validate Email Address
+        public bool validateEmail(string email)
+        {
+            return Regex.IsMatch(email, EMAIL_REGEX);
+        }
     }
 }
 
