@@ -60,6 +60,15 @@ namespace RegexPatternMatching
         {
             return Regex.IsMatch(prule2, PASSWORD_RULE2_REGEX);
         }
+
+
+        //Method For Paasword Rule-3
+
+        public static string PASSWORD_RULE3_REGEX = "^([a-zA-Z0-9])*[!@#$%^&*]{1}([a-zA-Z0-9])*$"; // At least 1 Numeric Number And All Rules Must Be Passed
+        public bool PasswordRule3(string prule3)
+        {
+            return Regex.IsMatch(prule3, PASSWORD_RULE3_REGEX);
+        }
     }
 }
 
